@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<tcudorp &le; 0.0<br/>gini = 0.3404<br/>samples = 1210506<br/>value = [121498, 968025, 120983]<br/>class = Not Diffused>, fillcolor="#39e581c6"] ;
+1 [label=<ratio &le; 0.0783<br/>gini = 0.3404<br/>samples = 1210345<br/>value = [121439, 967924, 120982]<br/>class = Not Diffused>, fillcolor="#39e581c6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.3388<br/>samples = 940700<br/>value = [93455, 753396, 93849]<br/>class = Not Diffused>, fillcolor="#39e581c7"] ;
+1 -> 2 ;
+3 [label=<gini = 0.3461<br/>samples = 269645<br/>value = [27984, 214528, 27133]<br/>class = Not Diffused>, fillcolor="#39e581c5"] ;
+1 -> 3 ;
+4 [label=<Num_Nbrs_Dffsd &le; 20.5<br/>gini = 0.4721<br/>samples = 161<br/>value = [59, 101, 1]<br/>class = Not Diffused>, fillcolor="#39e58169"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<gini = 0.4992<br/>samples = 102<br/>value = [53, 49, 0]<br/>class = Diffused>, fillcolor="#e5813913"] ;
+4 -> 5 ;
+6 [label=<gini = 0.2126<br/>samples = 59<br/>value = [6, 52, 1]<br/>class = Not Diffused>, fillcolor="#39e581dd"] ;
+4 -> 6 ;
+}
